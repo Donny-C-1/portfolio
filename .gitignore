@@ -1,0 +1,5 @@
+#ignore all files in any folder named temp
+temp/
+
+#ignore the folder node_modules
+node_modules/

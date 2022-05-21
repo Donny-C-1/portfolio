@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --dark-color: #343a40;
+}
+
+.animated-menu-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.animated-menu-button>div {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.menu-open>div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.menu-open>div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open>div:nth-child(3) {
+    transform: rotate(45deg) translate(-9px, -9px);
+}
+
+.h-uline {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin: 60px auto 80px auto;
+    border-bottom: 3px solid currentColor;
+    /* Use a gradient for a better effect */
+}
+
+.h-uline::before,
+.h-uline::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: -11.5px;
+    transform: rotate(45deg);
+    border: 3px solid currentColor;
+    /* Use a gradient for a better effect*/
+}
+
+.h-uline::before {
+    left: -23px;
+}
+
+.h-uline::after {
+    right: -23px;
+}
+
+.icon-box {
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+    opacity: 0.8;
+    margin: 0.55em;
+}
+
+.icon-box * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(45deg) translateX(-50%) translateY(-50%);
+    transform-origin: left top;
+}
+
+.icon-box::before,
+.icon-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0.1em;
+    height: 100%;
+    background-color: black;
+    transition: all .5s;
+}
+
+.icon-box::before {
+    left: -0.2em;
+    ;
+}
+
+.icon-box::after {
+    right: -0.2em;
+}
+
+.icon-box:hover {
+    opacity: 1;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-25 {
+    flex: 25%;
+}
+.col-50 {
+    flex: 50%;
+}
+.col-100 {
+    flex: 100%;
+}
+.as-content-opacity {
+    opacity: 1;
+    transition: all 3s;;
+}
+
+@media screen and (min-width: 576px) {
+    .body-container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body-container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .body-container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .body-container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .body-containter {
+        max-width: 1320px;
+    }
+}
