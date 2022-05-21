@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Donny-C-1/my-portfolio.git"
+    "url": "git+https://github.com/Donny-C-1/portfolio.git"
   },
   "keywords": [
     "Portfolio",
@@ -22,9 +22,9 @@
   "author": "Donny C",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Donny-C-1/my-portfolio/issues"
+    "url": "https://github.com/Donny-C-1/portfolio/issues"
   },
-  "homepage": "https://github.com/Donny-C-1/my-portfolio#readme",
+  "homepage": "https://github.com/Donny-C-1/portfolio#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
